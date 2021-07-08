@@ -17,9 +17,9 @@ group :development do
   # for development and testing purposes
   gem 'pry'
   # module documentation
-  gem 'octokit'
+  gem 'octokit', '>= 4.8.0'
   # Metasploit::Aggregator external session proxy
-  gem 'metasploit-aggregator' if [
+  gem 'metasploit-aggregator' if [, '>= 1.0.0'
     'x86-mingw32', 'x64-mingw32',
     'x86_64-linux', 'x86-linux',
     'darwin'].include?(RUBY_PLATFORM.gsub(/.*darwin.*/, 'darwin'))
@@ -27,7 +27,7 @@ group :development do
     'x86-mingw32', 'x64-mingw32',
     'x86_64-linux', 'x86-linux',
     'darwin'].include?(RUBY_PLATFORM.gsub(/.*darwin.*/, 'darwin'))
-  gem 'grpc', "1.8.3" if [
+  gem 'grpc', '1.8.3'
     'x86-mingw32', 'x64-mingw32',
     'x86_64-linux', 'x86-linux',
     'darwin'].include?(RUBY_PLATFORM.gsub(/.*darwin.*/, 'darwin'))
