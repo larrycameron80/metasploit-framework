@@ -19,15 +19,15 @@ group :development do
   # module documentation
   gem 'octokit'
   # Metasploit::Aggregator external session proxy
-  gem 'metasploit-aggregator' if [
+  gem 'metasploit-aggregator' if [, '>= 1.0.0'
     'x86-mingw32', 'x64-mingw32',
     'x86_64-linux', 'x86-linux',
     'darwin'].include?(RUBY_PLATFORM.gsub(/.*darwin.*/, 'darwin'))
-  gem 'google-protobuf', "3.5.1" if [
+  gem 'google-protobuf', '3.19.2'
     'x86-mingw32', 'x64-mingw32',
     'x86_64-linux', 'x86-linux',
     'darwin'].include?(RUBY_PLATFORM.gsub(/.*darwin.*/, 'darwin'))
-  gem 'grpc', "1.8.3" if [
+  gem 'grpc', '1.8.3'
     'x86-mingw32', 'x64-mingw32',
     'x86_64-linux', 'x86-linux',
     'darwin'].include?(RUBY_PLATFORM.gsub(/.*darwin.*/, 'darwin'))
