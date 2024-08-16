@@ -13,7 +13,7 @@ group :development do
   # Markdown formatting for yard
   gem 'redcarpet'
   # generating documentation
-  gem 'yard'
+  gem 'yard', '>= 0.9.35'
   # for development and testing purposes
   gem 'pry'
   # module documentation
@@ -27,7 +27,7 @@ group :development do
     'x86-mingw32', 'x64-mingw32',
     'x86_64-linux', 'x86-linux',
     'darwin'].include?(RUBY_PLATFORM.gsub(/.*darwin.*/, 'darwin'))
-  gem 'grpc', "1.8.3" if [
+  gem 'grpc', '1.58.3'
     'x86-mingw32', 'x64-mingw32',
     'x86_64-linux', 'x86-linux',
     'darwin'].include?(RUBY_PLATFORM.gsub(/.*darwin.*/, 'darwin'))
@@ -42,7 +42,7 @@ group :development, :test do
   gem 'rake'
   # Define `rake spec`.  Must be in development AND test so that its available by default as a rake test when the
   # environment is development
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 3.8.0'
   gem 'rspec-rerun'
 end
 
